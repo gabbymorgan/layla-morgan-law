@@ -1,11 +1,15 @@
 {
-  "name": "Contentful Gatsby Starter",
-  "description": "Gatsby starter for a Contentful project.",
+  "name": "Layla Morgan Law",
+  "description": "The law office of Layla Morgan.",
   "keywords": [
-    "contentful",
-    "gatsby",
-    "static",
-    "ssg"
+    "criminal defense",
+    "attorney",
+    "lawyer",
+    "family law",
+    "Layla Morgan",
+    "Layla Morgan attorney",
+    "Layla Morgan lawyer",
+    "Texas Lawyer"
   ],
   "repository": "https://github.com/contentful-userland/gatsby-contentful-starter",
   "success_url": "/",
