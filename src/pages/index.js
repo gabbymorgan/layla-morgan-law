@@ -15,7 +15,11 @@ class RootIndex extends React.Component {
         <div style={{ background: "#eee" }}>
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
-          <div className="wrapper">{author.node.shortBio.shortBio}</div>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: author.node.shortBio.childMarkdownRemark.html,
+            }}
+          />
         </div>
       </Layout>
     );
@@ -53,7 +57,9 @@ export const pageQuery = graphql`
         node {
           name
           shortBio {
-            shortBio
+            childMarkdownRemark {
+              html
+            }
           }
           title
           heroImage: image {
